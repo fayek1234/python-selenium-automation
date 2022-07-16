@@ -11,8 +11,9 @@ driver.get('https://www.amazon.com/')
 driver.find_element(By.XPATH, "//span[text()='Returns']").click()
 driver.find_element(By.ID, 'ap_email')
 
-expected_result = '"Returns"'
-actual_result = '"Returns"'
+expected_text = 'Sign-In'
+actual_text = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
 
-assert expected_result == actual_result
+assert actual_text == expected_text, f'Expected {expected_text} but got {actual_text}'
 print('Test case passed')
+driver.quit()
