@@ -5,4 +5,4 @@ Feature: Test scenarios for order
       Given open amazon page
       When  user click on order
       Then user see result
-      Then user can search for email
+     # Then user can search for email
