@@ -1,6 +1,8 @@
 # Created by khizi at 8/19/2022
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: test case for department search
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: user can select and search in a department
+    Given Open Amazon page
+    When select department computers
+    And search for hp laptop
+    Then verify computers department is selected
